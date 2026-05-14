@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantastic Hotel - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f2f2f2;
+      text-align: center;
+    }
+    header {
+      background: #081B5A;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: orange;
+    }
+#onBtn,
+#offBtn{
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:22px;
+  margin:10px;
+}
+#onBtn{
+  background:black;
+  color:white;
+}
+#offBtn{
+  background:gold;
+  color:black;
+}
+.dark-mode{
+  background:#121212;
+  color:white;
+}
+.dark-mode header{
+  background:black;
+}
+.dark-mode .gallery-section h2{
+  color:white;
+}
+.dark-mode nav a{
+  color:white;
+}
+    .about {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+    }
+    .about h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .about p {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services-title {
+      margin-top: 20px;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .service-box {
+      text-align: left;
+    }
+    .service-box h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .service-box ul {
+      list-style: none;
+    }
+    .service-box ul li {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .check {
+      color: orange;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    .image-section img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+    <body>
+      <center>
+  <header>
+    <div class="top-bar">    
+      <div class="logo">
+      <i style="font-size: 40px;">FANTASTIC <span style="color: orange; font-size: 40px;">HOTEL MANAGEMENT SYSTEM</span></i>
+      </div>
+    </div>
+    <nav>
+     <a href="home.html">Home</a>
+<a href="about us.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="Room.html">Room</a>
+<a href="contact.html">Contact Us</a>
+<a href="reservation.html">Reservations</a>
+    </nav>
+  </header>
+      </center>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<button id="onBtn" onclick="turnOnNightMode()">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="offBtn"
+onclick="turnOffNightMode()"
+style="display:none;">
+  <i class="fa-solid fa-sun"></i>
+</button>
+<script>
+  function turnOnNightMode(){
+
+  document.body.classList.add("dark-mode");
+
+  document.getElementById("onBtn").style.display = "none";
+  document.getElementById("offBtn").style.display = "inline-block";
+}
+function turnOffNightMode(){
+  document.body.classList.remove("dark-mode");
+  document.getElementById("onBtn").style.display = "inline-block";
+  document.getElementById("offBtn").style.display = "none";
+}
+  </script>
+  <section class="about">
+    <h1>About us</h1>
+    <p>
+      “My Hotel, Rooms, Delicious breakfast, foods and beverages pool,<br>
+      for themselves and show my guest everything he needs to know.”
+    </p>
+    <div class="services-title">Our services</div>
+    <div class="services">
+      <div class="service-box">
+        <h2>24 Hours Restaurant</h2>
+        <ul>
+          <li><span class="check">✔</span>24 hours room service</li>
+          <li><span class="check">✔</span>24-hour Concierge service</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <h2>Stay First, Pay After!</h2>
+        <ul>
+          <li><span class="check">✔</span>Decorated room</li>
+          <li><span class="check">✔</span>proper air conditioned</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="image-section">
+    <img src="p11.png" alt="Hotel Pool">
+  </section>
+  </body>
+</html>

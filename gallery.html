@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotel Gallery</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#001b66;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+
+    header h1 span{
+      color:orange;
+    }
+
+    nav{
+      margin-top:15px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:orange;
+    }
+#onBtn,
+#offBtn{
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:22px;
+  margin:10px;
+}
+
+#onBtn{
+  background:black;
+  color:white;
+}
+
+#offBtn{
+  background:gold;
+  color:black;
+}
+
+.dark-mode{
+  background:#121212;
+  color:white;
+}
+
+.dark-mode header{
+  background:black;
+}
+
+.dark-mode .gallery-section h2{
+  color:white;
+}
+
+.dark-mode nav a{
+  color:white;
+}
+    .gallery-section{
+      width:90%;
+      margin:30px auto;
+      text-align:center;
+    }
+    .gallery-section h2{
+      font-size:50px;
+      color:#001b66;
+      margin-bottom:20px;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:8px;
+      transition:0.4s;
+    }
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+    .hidden{
+      display:none;
+    }
+    .buttons{
+      margin-top:30px;
+    button{
+      padding:12px 25px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+    #showBtn{
+      background:#001b66;
+      color:white;
+    }
+    #showBtn:hover{
+      background:orange;
+    }
+    #lessBtn{
+      background:crimson;
+      color:white;
+      display:none;
+    }
+      #lessBtn:hover{
+      background:darkred;
+    }
+    @media(max-width:768px){
+      .gallery{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    @media(max-width:500px){
+      .gallery{
+        grid-template-columns:1fr;
+      }
+    }
+  </style                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    zz>
+</head>
+<body>
+  <header>
+    <h1>
+      FANTASTIC <span>HOTEL MANAGEMENT SYSTEM</span>
+    </h1>
+    <nav>
+      <a href="home.html">Home</a>
+<a href="about us.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="Room.html">Room</a>
+<a href="contact.html">Contact Us</a>
+<a href="reservation.html">Reservations</a>
+    </nav>
+  </header>
+  <section class="gallery-section">
+    <h2>Our Gallery</h2>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<button id="onBtn" onclick="turnOnNightMode()">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="offBtn"
+onclick="turnOffNightMode()"
+style="display:none;">
+  <i class="fa-solid fa-sun"></i>
+</button>
+    <div class="gallery">
+
+       <img src="j5.jpg" alt="">
+      <img src="p13.jpg" alt="">
+      <img src="j13.png" alt="">
+      <img src="p3.png"alt="">
+      <img src="j14.png" alt="">
+      <img src="p11.png" alt="">
+      <img class="extra hidden" src="17.jpg">
+
+      <img class="extra hidden" src="18.png">
+
+      <img class="extra hidden" src="19.jpg">
+    </div>
+    
+<script>
+function turnOnNightMode(){
+  document.body.classList.add("dark-mode");
+  document.getElementById("onBtn").style.display = "none";
+  document.getElementById("offBtn").style.display = "inline-block";
+}
+function turnOffNightMode(){
+  document.body.classList.remove("dark-mode");
+  document.getElementById("onBtn").style.display = "inline-block";
+  document.getElementById("offBtn").style.display = "none";
+}
+</script>
+    <div class="buttons">
+
+      <button id="showBtn" onclick="showMore()">
+        Show More
+      </button>
+
+      <button id="lessBtn" onclick="showLess()">
+        See Less
+      </button>
+    </div>
+  </section>
+      <div class="footer-bottom">
+    <p>&copy; 2026 @Fantastic Hotel | All Rights Reserved</p>
+</div>
+  <script>
+    function showMore(){
+      let images = document.querySelectorAll(".extra");
+      images.forEach(function(img){
+        img.classList.remove("hidden");
+      });
+      document.getElementById("showBtn").style.display="none";
+      document.getElementById("lessBtn").style.display="inline-block";
+    }
+    function showLess(){
+      let images = document.querySelectorAll(".extra");
+      images.forEach(function(img){
+        img.classList.add("hidden");
+      });
+      document.getElementById("showBtn").style.display="inline-block";
+      document.getElementById("lessBtn").style.display="none";
+    }
+
+  </script>
+
+</body>
+</html>

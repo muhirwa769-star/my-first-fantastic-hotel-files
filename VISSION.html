@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantastic Hotel Management System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 2;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+     background: url('j20.png') center/cover no-repeat;
+     font-size: 100px;
+
+    }
+
+    .header {
+      background: #1518c9;
+      color: white;
+      text-align: center;
+      padding: 4px 0;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+
+    .header h1 span {
+      color: orange;
+    }
+nav{
+    margin-top:15px;
+    text-align:center;
+}
+nav a{
+    color:black;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:40px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:orange;
+}
+
+    .main {
+      display: flex;
+      justify-content: center;
+
+      margin-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 720px;
+      height: 420px;
+      background: url('j20.png') center/cover no-repeat;
+      border: 2px solid #1e90ff;
+      position: relative;
+      color: white;
+      padding: 30px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hotel-title {
+      text-align: center;
+      font-size: 42px;
+      font-family: Georgia, serif;
+      color: #f4c542;
+      margin-bottom: 35px;
+      font-weight: bold;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .section {
+      padding: 10px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .divider {
+      position: absolute;
+      top: 150px;
+      bottom: 30px;
+      left: 50%;
+      width: 3px;
+      background: white;
+      transform: translateX(-50%);
+    }
+
+    .section p {
+      font-style: italic;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 95%;
+        height: auto;
+      }
+
+      .sections {
+        grid-template-columns: 1fr;
+      }
+
+      .divider {
+        display: none;
+      }
+      nav {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>FANTASTIC HOTEL <span>MANAGEMENT SYSTEM</span></h1>
+
+    <nav>
+      <a href="home.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Rooms.html">Room</a>
+            <a href="CONTACT.html">Contact Us</a>
+            <a href="reservation.html">Reservation
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="hotel-title">FANTASTIC HOTEL</div>
+
+        <div class="divider"></div>
+
+        <div class="sections">
+          <div class="section">
+            <h2>Mission</h2>
+            <p>
+              The purpose of this hotel:<br>
+              . Providing clean room<br>
+              . Good service<br>
+              . Comfort<br>
+              . Safety for guests
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>Vission</h2>
+            <p>
+              Means the future goal of the hotel:<br>
+              becoming the best hotel<br>
+              known for excellent service<br>
+              and happy customers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
