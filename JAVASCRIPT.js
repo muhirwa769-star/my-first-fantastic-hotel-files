@@ -4,5 +4,4 @@ function btnClick(btn) {
     btn.style.background = "green";
 }
 document.getElementById("year").textContent = new Date().getFullYear();
-
 </script>
