@@ -1,0 +1,137 @@
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background:#f2f2f2;
+}
+header{
+    background:#071b5a;
+    color:white;
+    padding:15px 40px;
+    position:center;
+      background:#041b63;
+        color:white;
+        padding:20px 0;
+        text-align:center;
+}
+header h1{
+    font-size:35px;
+    font-weight:bold;
+}
+header h1 span{
+    color:orange;
+}
+nav{
+    margin-top:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+}
+.container{
+    width:95%;
+    margin:20px auto; 
+}
+.title{
+    font-size:40px;
+    margin-bottom:20px;
+}
+.form-section{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+}
+.box{
+    flex:4;
+    min-width:450px;
+    border:2px solid #09068a;
+    border-radius:20px;
+    padding:20px;
+    background:white;
+    position:center;
+    margin: 20px;
+}
+.box h2{
+    background:#071b5a;
+    color:white;
+    padding:14px;
+    border-radius:14px 14px 0 0;
+    text-align:center;
+    margin:-20px -20px 20px -20px;
+    font-size:20px;
+}
+.form-group{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+.form-group label{
+    width:190px;
+    font-size:18px;
+}
+.form-group input,
+.form-group select{
+    flex:1;
+    height:38px;
+    padding:5px 10px;
+    font-size:16px;
+}
+.radio-group{
+    display:flex;
+    align-items:center;
+    color: #010105;
+    gap:50px;
+    font-size:50px;
+}
+.bottom{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    stroke: #010105;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.bottom label{
+    font-size:30px;
+}
+.bottom select{
+    width:300px;
+    height:40px;
+    font-size:20px;
+}
+   .btn{
+    background: linear-gradient(135deg, #0b1e4d, orange);
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.4s ease;
+    position: relative;
+    animation: moveButton 5s infinite alternate;
+button:hover{
+background:#0d2d8a;
+}
+.submit-btn{
+background:rgb(1,75,140);
+color:white;
+padding:10px 30px;
+position:absolute;
+light: s140px;
+}
+border:none;
+cursor:pointer;
+font-size:18px;
+
+</style>
