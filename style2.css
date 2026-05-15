@@ -1,0 +1,116 @@
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f2f2f2;
+      text-align: center;
+    }
+    header {
+      background: #081B5A;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: orange;
+    }
+#onBtn,
+#offBtn{
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:22px;
+  margin:10px;
+}
+#onBtn{
+  background:black;
+  color:white;
+}
+#offBtn{
+  background:gold;
+  color:black;
+}
+.dark-mode{
+  background:#121212;
+  color:white;
+}
+.dark-mode header{
+  background:black;
+}
+.dark-mode .gallery-section h2{
+  color:white;
+}
+.dark-mode nav a{
+  color:white;
+}
+    .about {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+    }
+    .about h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .about p {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services-title {
+      margin-top: 20px;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .service-box {
+      text-align: left;
+    }
+    .service-box h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .service-box ul {
+      list-style: none;
+    }
+    .service-box ul li {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .check {
+      color: orange;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    .image-section img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>

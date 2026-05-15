@@ -1,0 +1,129 @@
+  <style>
+  header{
+    background:#0b1e4d;
+    color:white;
+    text-align:center;
+    padding:20px 10px; 
+    font-size: 40px;
+}
+header h1{
+    font-size:48px;
+    letter-spacing:1px;
+}
+header span{
+    color:orange;
+}
+nav{
+    margin-top:10px;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-size:28px;
+}
+        .hero {
+            height: 90vh;
+            background: url(31.JPG) no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 80px;
+            color: orange;
+            margin-bottom: 10px;
+        }
+        .hero-content h2 {
+            font-size: 60px;
+            margin-bottom: 10px;
+           color: aliceblue; 
+           
+        }
+        .hero-content p {
+            font-size: 30px;
+            color: rgba(247, 132, 0, 0.911);
+            margin-bottom: 200px;
+            position:top;
+        }
+        .btn{
+    background: linear-gradient(135deg, #0b1e4d, orange);
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.4s ease;
+    position: relative;
+    animation: moveButton 5s infinite alternate;
+}
+
+.btn:hover{
+    
+    background: linear-gradient(135deg, orange, #0b1e4d);
+    transform:none;
+}
+@keyframes moveButton {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+        .btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn {
+  position: static;
+}
+.footer{
+    background:#0b1e4d;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:50px;
+}
+.footer-buttons{
+    margin:20px 0;
+}
+.fbtn{
+    background: linear-gradient(135deg, #0b1e4d, orange);
+    color:white;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+    animation: moveFooterBtn 2s infinite alternate;
+}
+@keyframes moveFooterBtn{
+    from{transform:translateY(0);}
+    to{transform:translateY(-10px);}
+}
+.copy{
+    margin-top:20px;
+    font-size:14px;
+    border-top:1px solid gray;
+    padding-top:15px;
+}
+.toggle-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:orange;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+    </style>
